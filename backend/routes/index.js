@@ -2,9 +2,8 @@ var express = require("express");
 var router = express.Router();
 const schema = require("./users");
 
-router.get("/user", async (req, res) => {
-  const data = await schema.find()
-  res.json(data)
+router.get("/", async (req, res) => {
+  res.send("hellow")
 })
 
 router.post("/users", async (req, res) => {
