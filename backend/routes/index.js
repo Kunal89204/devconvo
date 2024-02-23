@@ -3,7 +3,7 @@ var router = express.Router();
 const schema = require("./users");
 
 router.get("/", async (req, res) => {
-  res.send("hellow")
+  res.render("index", {title: "hello"})
 })
 
 router.post("/users", async (req, res) => {
