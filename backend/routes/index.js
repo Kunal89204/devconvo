@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 const schema = require("./users");
 
-router.get("/", async (req, res) => {
+router.get("/", (req, res) => {
   res.render("index", {title: "hello"})
 })
 
